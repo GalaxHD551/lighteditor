@@ -1,0 +1,18 @@
+{
+	"author": "GalaxHD551",
+	"version": "1.0",
+	"server_scripts": [
+		"lighteditor_s.lua",
+		"lightsaver.lua",
+		"json.lua",
+		"file.lua"
+	],
+	"client_scripts":[
+		"lighteditor_c.lua",
+		"json.lua"
+	],
+	"files":[
+		"lighteditor.html",
+		"lighteditor.css"
+	]
+}

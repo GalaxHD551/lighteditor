@@ -1,0 +1,214 @@
+body{
+    font-family: "Verdana", "Geneva", "Tahoma", "sans-serif";
+}
+
+#LightEditor{
+    max-width: 500px;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: rgb(62, 62, 62);
+    color: rgb(217, 217, 217);
+    font-size: 15px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+.editortable {
+    justify-content: center;
+    padding-left: 2px;
+}
+
+.row > .col {
+    float: left;
+    width: 165px;
+    height: 90%;
+    padding-bottom: 4px;
+}
+
+.row > .col > input {
+    margin-left: 2%;
+    width: 90%;
+    height: 20px;
+    background-color: rgb(216, 216, 216);
+    cursor: text;
+    border: none;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.row > .col > .btn {
+    background-color: rgb(0, 117, 255);
+    width: 95%;
+    cursor: pointer;
+    height: 30px;
+    color: rgb(231, 231, 231);
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10% / 50%;
+}
+
+.row > .col > .btn:hover {
+    background-color: rgb(24, 92, 170);
+    width: 95%;
+    cursor: pointer;
+    height: 30px;
+    color: rgb(231, 231, 231);
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10% / 50%;
+}
+
+.row > .col > .btn-delete {
+    background-color: rgb(255, 0, 0);
+    width: 40%;
+    cursor: pointer;
+    color: rgb(231, 231, 231);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10% / 50%;
+}
+
+.row > .col > .btn-duplicate {
+    background-color: rgb(0, 117, 255);
+    width: 40%;
+    cursor: pointer;
+    color: rgb(231, 231, 231);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10% / 50%;
+}
+
+.row > .col > .btn-delete:hover {
+    background-color: rgb(146, 19, 19);
+}
+
+.row > .col > .btn-duplicate:hover {
+    background-color: rgb(24, 92, 170);
+}
+
+.row > .col > .btn-color {
+    background-color: rgb(216, 216, 216);
+    width: 96%;
+    cursor: pointer;
+    height: 25px;
+}
+
+.row > .col > .btn:active {
+    background-color: rgb(0, 49, 105);
+}
+
+.row > .col > .btn-delete:active {
+    background-color: rgb(90, 2, 2);
+}
+
+.row > .col > .btn-duplicate:active {
+    background-color: rgb(0, 49, 105);
+}
+
+.row > .col > .btn-slider {
+    height: 5px;
+    cursor: pointer;
+}
+
+.row > .col > .box {
+    cursor: pointer;
+}
+
+.row > .col-alone {
+    text-align: center;
+    float: left;
+    height: 100%;
+    padding-bottom: 4px;
+    width: 100%;
+}
+
+h3{
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+}
+
+hr {
+    height: 2px; 
+    background-color: rgb(0, 0, 0);
+    width: 50%; 
+    border: none;
+}
+
+.time-menu {
+    font-size: 13px;
+}
+
+.input-time {
+    background-color: rgb(216, 216, 216);
+    cursor: text;
+    border: none;
+    padding: 0 5px;
+    border-radius: 5px;
+    width: 8.5%;
+}
+
+.btn-slider {
+    /*width: 25%;*/
+    /*height: 10px;*/
+    height: 5px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    background: rgb(231, 231, 231); 
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+}
+
+.btn-save {
+    float: right;
+    margin-right: 1.5%;
+    background-color: rgb(0, 255, 85);
+    width: 13.5%;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10% / 50%;
+}
+
+.btn-save:hover {
+    background-color: rgb(17, 182, 72);
+}
+
+.btn-save:active {
+    background-color: rgb(25, 117, 56);
+}
+
+.btn-delete-all {
+    float: right;
+    margin-right: 4.5%;
+    background-color: rgb(255, 0, 0);
+    width: 13.5%;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10% / 50%;
+}
+
+.btn-delete-all:hover {
+    background-color: rgb(146, 19, 19);
+}
+
+.btn-delete-all:active {
+    background-color: rgb(90, 2, 2);
+}
+
+p {
+    margin: 0;
+}
