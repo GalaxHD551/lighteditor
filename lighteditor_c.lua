@@ -17,7 +17,6 @@ AddEvent("OnPackageStart", function()
     SetWebAnchors(lightUI, 0.72, 0.0, 1.0, 1.0)
     LoadWebFile(lightUI, 'http://asset/' .. GetPackageName() .. '/lighteditor.html')
 	SetWebVisibility(lightUI, WEB_HIDDEN)
-    --ShowChat(false) --TO REMOVE
 end)
 
 AddEvent("OnKeyPress", function(key)
@@ -54,10 +53,6 @@ AddRemoteEvent("EditMode", function(lights)
         end
     end
     ShowEdit(Edit, lights)
-end)
-
-AddRemoteEvent("EditorLights", function(EditorLights)
-    --ExecuteWebJS(lightUI, 'lightBoard('..json_encode(EditorLights)..')')
 end)
 
 function ShowEdit(edit)
