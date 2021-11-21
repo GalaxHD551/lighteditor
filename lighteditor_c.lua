@@ -16,7 +16,7 @@ AddEvent("OnPackageStart", function()
     lightUI = CreateWebUI(0.0, 0.0, 0.0, 0.0, 1, 30)
     SetWebAnchors(lightUI, 0.72, 0.0, 1.0, 1.0)
     LoadWebFile(lightUI, 'http://asset/' .. GetPackageName() .. '/lighteditor.html')
-	SetWebVisibility(lightUI, WEB_HIDDEN)
+    SetWebVisibility(lightUI, WEB_HIDDEN)
 end)
 
 AddEvent("OnKeyPress", function(key)
@@ -86,12 +86,6 @@ function ShowLight(edit)
                         else 
                             SetDrawColor(RGB(255, 255, 255, 255)) 
                         end
-                        DrawText(sx-string.len("LightID : " .. tostring(v)) * 3,sy - 45, "LightID : " .. tostring(v))
-                        --DrawText(sx-string.len("Lighttype : " .. tostring(v.lighttype)) * 3,sy - 30, "Lighttype : " .. tostring(v.lighttype))
-                        --DrawText(sx-string.len("Model : " .. tostring(modelname)) * 3,sy - 15, "Model : " .. tostring(modelname))
-                        DrawText(sx-string.len("Location : " .. tostring(math.floor(x + 0.5)) .. " " .. tostring(math.floor(y + 0.5)) .. " " .. tostring(math.floor(z + 0.5))) * 3,sy, "Location : " .. tostring(math.floor(x + 0.5)) .. " " .. tostring(math.floor(y + 0.5)) .. " " .. tostring(math.floor(z + 0.5)))
-                        local rx, ry, rz = GetObjectRotation(v)
-                        DrawText(sx-string.len("Rotation : " .. tostring(math.floor(rx + 0.5)) .. " " .. tostring(math.floor(ry + 0.5)) .. " " .. tostring(math.floor(rz + 0.5))) * 3,sy + 15, "Rotation : " .. tostring(math.floor(rx + 0.5)) .. " " .. tostring(math.floor(ry + 0.5)) .. " " .. tostring(math.floor(rz + 0.5)))
                         local MinX, MinY, MinZ, MaxX, MaxY, MaxZ = GetObjectBoundingBox(v)
                         DrawLight(MinX, MinY, MinZ, MaxX, MaxY, MaxZ)
                     end
