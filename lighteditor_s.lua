@@ -134,7 +134,7 @@ AddRemoteEvent("LightSourceWidth", function(player, light, width)
 end)
 
 AddRemoteEvent("LightDuplication", function(player, light)
-    local newlight = lr.CreateLightDuplication(light)
+    local newlight = lr.DuplicateLight(light)
     local lights = lr.GetAllLights()
 
     table.insert(EditorLights, newlight)
